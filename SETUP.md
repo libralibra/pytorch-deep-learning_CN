@@ -1,51 +1,50 @@
-# Getting setup to code PyTorch
+# 编写 PyTorch 代码的设置
 
-Setting up a machine for coding deep learning can be quite involved.
+设置用于编写深度学习代码的机器可能有些麻烦。
 
-From hardware to software to all of the little bits and pieces to make your code run on someone else's machine just like it ran on yours.
+涵盖了从硬件到软件再到所有需要注意的小问题，为了让代码像在您的机器上运行一样在其他人的机器上运行。
 
-For the sake of this course, we're keeping things simple.
+为了本课程，我们尽量保持简单。
 
-Though not so simple you won't be able to use what you're using here elsewhere.
+尽管不是那么简单，但是您将无法在其他地方使用这里一样的设置。
 
-There are two setup options. One is easier than the other but the other offers more options in the long-run.
+有两个设置选项。一个容易些，但另一个则提供了更多的选择。
+1. 使用Google Colab（最简单）
+2. 设置您自己的本地/远程计算机（需要额外几个步骤，但有更多的灵活性）
 
-1. Use Google Colab (easiest)
-2. Setup on your own local/remote machine (a few steps but you've got a bit more flexibility here)
+**注意：** 这些都不是为了替代 [Pytorch的官方设置文档](https://pytorch.org/get-started/locally/), 如果您想长期使用Pytorch编写代码，则应该熟悉它。
 
-**Note** Neither of these are replacements for [PyTorch's official setup docs](https://pytorch.org/get-started/locally/), if you're wanting to start coding PyTorch for the long term, you should get familiar with those.
+## 1. Google Colab的设置（最简单）
 
-## 1. Setup with Google Colab (easiest)
+Google Colab是一种免费的在线交互式计算引擎（基于Jupyter笔记本电脑，数据科学标准）。
 
-Google Colab is a free online interactive compute engine (based on Jupyter Notebooks, the data science standard).
+Google Colab的好处是：
+* 几乎为零的设置（Google Colab配备了Pytorch和许多其他数据科学软件包，例如Pandas，Numpy和Matplotlib已安装）
+* 使用链接分享您的工作
+* 免费访问GPU（gpus使您的深度学习代码更快），带有付费的选项，可以访问 *更多* GPU Power
 
-The benefits of Google Colab are:
-* Almost zero setup (Google Colab comes with PyTorch and many other data science packages such as pandas, NumPy and Matplotlib already installed)
-* Share your work with a link
-* Free access to GPUs (GPUs make your deep learning code faster), with a paid option to access *more* GPU power
+Google Colab的缺点是：
+* 超时（大多数COLAB笔记本仅保留最高2-3个小时的状态，尽管这可以随着付费选项而增加）
+* 无法访问本地存储（尽管有解决方案）
+* 脚本的设置不是很好（将代码转换为模块）
 
-The cons of Google Colab are:
-* Timeouts (most Colab notebooks only preserve state for 2-3 hours max, though this can increase with the paid option)
-* No access to local storage (though there are ways around this)
-* Not as well setup for scripting (turning your code into modules)
+### 使用Google Colab开始，在需要时进行扩展
 
-### Use Google Colab to begin, scale up when needed
+对于课程的入门笔记本（00-04），我们将仅使用Google Colab。
 
-For the starter notebooks of the course (00-04), we'll be using exclusively Google Colab.
+这是因为它不仅满足我们的需求。
 
-This is because it more than satisfies our needs.
+实际上，这是我经常自己做的工作流程。
 
-In fact, this is the workflow I'll often do myself.
+我在Google Colab中做了大量的初学者和实验性工作。
 
-I do a large amount of beginner and experimental work in Google Colab.
+而且，当我找到想变成一个更大的项目或更多工作的东西时，我会移至本地计算或云托管计算。
 
-And when I've found something I'd like to turn into a larger project or work on more, I move to local compute or cloud-hosted compute.
+### Google Colab入门
 
-### Getting started with Google Colab
+要从Google Colab开始，我首先要进行[Google colab笔记本简介]（https://colab.research.google.com/notebooks/notebooks/basic_features_overview.ipynb）（只是为了熟悉所有的设置与操作）。
 
-To begin with Google Colab, I'd first go through the [Introduction to Google Colab notebook](https://colab.research.google.com/notebooks/basic_features_overview.ipynb) (just to get familiar with all the bells and buttons).
-
-### Opening a course notebook with one-click
+### 一键打开课程笔记本
 
 After you've gotten familiar with the Google Colab interface, you can run any of the course notebooks directly in Google Colab by pressing the "Open in Colab" button at the top of the online book version or the GitHub version.
 
